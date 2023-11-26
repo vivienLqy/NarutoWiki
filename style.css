@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'Ninja Naruto';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Ninja Naruto'), url('njnaruto.woff') format('woff');
+    }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ninja Naruto';
+}
+body{
+    width: 100%;
+    background-color: #D76C09;
+}
+.d-flex{
+    display: flex;
+}
+.w-90{
+    width: 90%;
+}
+.jc-center{
+    justify-content: center;
+}
+.m-auto{
+    margin: auto;
+}
+.a-center{
+    align-items: center;
+}
+.jc-Sb{
+    justify-content: space-between;
+}
+.w-40{
+    width: 50%;
+}
+ul{
+    list-style: none;
+}
+ul a{
+    text-decoration: none;
+    color: #D76C09;
+}
+#accueil{
+    color: red;
+}
+.account_login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #092AD7;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 30px;
+}
+nav{
+    background: #1E1E1E;
+}
+.logo{
+    color: #D76C09;
+    font-size: 32px;
+    text-shadow: 0px 10px 4px rgba(126, 120, 120, 0.25);
+}
+.logo img{
+    width: 91px;
+    height: 91px;
+}
+.navbar ul{
+    text-shadow: 0px 10px 4px rgba(126, 120, 120, 0.25);
+    font-size: 20px;
+    font-style: normal;
+}
+.banniere{
+    background: no-repeat center url(img/banniere.png);
+    background-size: cover;
+    height: 286px;
+    width: 100%;
+}
+main{
+    margin-top: 70px;
+    background-color: #D76C09;
+    height: 95vh;
+}
+.bandeau{
+    width: 100%;
+}
+.parent{
+    position: relative;
+}
+.content{
+    position: absolute;
+    top: 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.section{
+
+}
+.content section{
+    width: 30%;
+}
+.content p{
+    color: #4F4343;
+    font-size: 16px;
+}
+
