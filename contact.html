@@ -1,11 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact-NarutoWiki</title>
+    <title>NarutoWiki-Contact</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <div class="navbar d-flex m-auto  w-90 a-center jc-Sb">
+                <div class="logo d-flex a-center">
+                    <img src="img/uzumaki-removebg-preview.png" alt="logo">
+                    <p>WikiNaruto</p>
+                </div>
+                <ul class="d-flex a-center w-40 jc-Sb">
+                        <li><a class="nav_link" href="index.html" id="accueil">Accueil</a></li>
+                        <li><a class="nav_link" href="#">Les Personnages</a></li>
+                        <li><a class="nav_link" href="#">Le Monde</a></li>
+                        <li><a class="nav_link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="account d-flex a-center">
+                    <img src="img/kyubi.png" alt="logo_account">
+                    <div class="account_login">
+                        <p>Mon compte</p>
+                        <p>Deconnexion</p>
+                    </div>
+                </div>  
+            </div>
+        </nav>
+        <div class="banniere_contact">
+            <div class="border_title">
+                <div class="border">
+                    <div class="title">
+                        <h1>Contact</h1>
+                    </div>
+                    <img src="img/rouleaux-removebg-preview.png">
+                </div>
+
+            </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="form_div d-flex -> display-block">
+            <div class="d-flex">
+                <form action="Contact" method="post">
+                    <div class="title_mail">
+                        <h2>Envoie nous un mail</h2>
+                    </div>
+                    <ul>
+                        <li class="form_pseudo">
+                            <div class="names">
+                                <label for="name">Nom :</label>
+                                <input type="text" id="name" name="user_name">
+                            </div>
+                            <div class="names">
+                                <label for="first_name">Prenom :</label>
+                                <input type="text" id="first_name" name="user_first_name">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="names">
+                                <label for="mail">Mail :</label>
+                                <input type="email" id="mail" name="user_mail"/>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="names">
+                                <label for="msg">Message :</label>
+                                <textarea id="msg" name="user_message"></textarea>
+                            </div>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer_top d-flex">
+            <a href="#">
+                <img src="img/uzumaki-removebg-preview.png" class="logo_footer" alt="logo">
+            </a>
+            <div class="navbar_footer d-flex">
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Les Personnages</a></li>
+                    <li><a href="#">Le Monde</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Données personnelles et cookies</a></li>
+                    <li><a href="#">Mention légales</a></li>
+                    <li><a href="#">Condition générales</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <p>Condition de confidentialite | Copyright</p>
+        </div>
+    </footer>
     
 </body>
 </html>

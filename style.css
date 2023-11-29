@@ -4,7 +4,7 @@
     font-style: normal;
     font-weight: normal;
     src: local('Ninja Naruto'), url('njnaruto.woff') format('woff');
-    }
+}
 *{
     padding: 0;
     margin: 0;
@@ -42,9 +42,6 @@ ul a{
     text-decoration: none;
     color: #D76C09;
 }
-#accueil{
-    color: red;
-}
 .account_login{
     display: flex;
     flex-direction: column;
@@ -60,6 +57,10 @@ nav{
     position: relative;
     z-index: 2;
     font-family: 'Ninja Naruto';
+}
+.nav_link:active{
+    color: red;
+
 }
 .logo{
     color: #D76C09;
@@ -108,7 +109,7 @@ main{
 }
 .parent{
     background: no-repeat center url(img/Frame\_1.png);
-    background-size: cover;
+    background-size: center;
     width: 100%;
     height: 330px;
     align-items: center;
@@ -134,6 +135,7 @@ footer{
 }
 .footer_top{
     padding-top: 20px;
+    padding-bottom: 20px;
     width: 90%;
     margin-left: 5%;
     align-items: center;
@@ -153,4 +155,110 @@ footer{
     display: flex;
     justify-content: center;
     background-color: aliceblue;
+}
+/* ---------------------------------------------------Contact------------------------------------------------------- */
+.banniere_contact{
+    background: no-repeat center url(img/naruto-univers-header.png);
+    background-size: cover;
+    width: 100%;
+    height: 286px;
+    box-shadow: 0px 15px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.border{
+    background: rgba(30, 30, 30, 0.68);
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.border_title{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.title{
+    position: absolute;
+    font-family: 'Ninja Naruto';
+    color: #D76C09;
+    text-shadow: 0px 10px 4px #000;
+    letter-spacing: 2px;
+}
+.form_div{
+    background: no-repeat center url(img/Frame\_1.png);
+    background-size: center;
+    width: 100%;
+    height: 330px;
+    align-items: center;
+    box-shadow: 0px 15px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: center;
+}
+.names{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form_pseudo{
+    display: flex;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Ninja Naruto';
+}
+input , textarea{
+    background: transparent;
+}
+#mail{
+    width: 90%;
+    height: 30px;
+    border-radius: 9px;
+    border: 5px solid #756B6B;
+    background: #A3A2A2;
+    box-shadow: 0px 5px 2px 2px rgba(0, 0, 0, 0.53) inset;
+}
+#name{
+    width: 95%;
+    height: 30px;
+    border-radius: 9px;
+    border: 5px solid #756B6B;
+    background: #A3A2A2;
+    box-shadow: 0px 5px 2px 2px rgba(0, 0, 0, 0.53) inset;
+}
+#first_name{
+    width: 95%;
+    height: 30px;
+    border-radius: 9px;
+    border: 5px solid #756B6B;
+    background: #A3A2A2;
+    box-shadow: 0px 5px 2px 2px rgba(0, 0, 0, 0.53) inset;
+}
+#msg{
+    width: 100%;
+    height: 50px;
+    border-radius: 9px;
+    border: 5px solid #756B6B;
+    background: #A3A2A2;
+    box-shadow: 0px 5px 2px 2px rgba(0, 0, 0, 0.53) inset;
+}
+.title_mail{
+    width: 512px;
+    height: 56px;
+    transform: rotate(0.248deg);
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 7px solid #756B6B;
+    background: #A3A2A2;
+    box-shadow: 0px 10px 0px 5px rgba(0, 0, 0, 0.53) inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
