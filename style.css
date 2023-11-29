@@ -57,6 +57,8 @@ nav{
     position: relative;
     z-index: 2;
     font-family: 'Ninja Naruto';
+    display: flex;
+    align-items: center;
 }
 .nav_link:active{
     color: red;
@@ -214,6 +216,9 @@ form{
     align-items: center;
     font-family: 'Ninja Naruto';
 }
+form label{
+    font-size: 12px;
+}
 input , textarea{
     background: transparent;
 }
@@ -249,9 +254,30 @@ input , textarea{
     background: #A3A2A2;
     box-shadow: 0px 5px 2px 2px rgba(0, 0, 0, 0.53) inset;
 }
+#btn{
+    margin-top: 2%;
+    height: 30px;
+    width: 30%;
+    border-radius: 9px;
+    border: 5px solid #756B6B;
+    background: #A3A2A2;
+    box-shadow: 0px 1px 5px 5px rgba(0, 0, 0, 0.26);
+
+}
+.submit{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.title_mail h2{
+    font-size: 22px;
+}
+.w-100{
+    width: 100px;
+}
 .title_mail{
     width: 512px;
-    height: 56px;
+    height: 46px;
     transform: rotate(0.248deg);
     flex-shrink: 0;
     border-radius: 20px;
@@ -261,4 +287,64 @@ input , textarea{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+/* -----------------------Menu_burger-------------------------------- */
+.icons{
+    display: none;
+    cursor: pointer;
+}
+@media (max-width: 1150px){
+    .icons{
+        display: block;
+        position: relative;
+        z-index: 2;
+    }
+    .ul_link, .account{
+      display: none;
+    }
+    nav li a:hover{
+        color: #804106;
+    }
+    label input{
+        appearance: none;
+    }
+    label{
+        display: block;
+        position: relative;
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+    }
+    .label .logo_menu{
+        background: #1E1E1E;
+        width: 100%;
+        height: 100%;
+        display: block;
+        border-radius: 20px;
+    }
+    label .logo_menu::before{
+        content: url(img/Menu-removebg-preview.png);
+    }
+    label input:checked ~ .logo_menu::before{
+        content: url(img/menu_fermer-removebg-preview.png);
+    }
+    .menu_burger{
+        overflow: hidden;
+        position: fixed;
+        right: 2px;
+        background: rgba(215,9,9,0.60);
+        width: 300px;
+        height: 200px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        visibility: hidden;
+    }
+    .menu_burger a{
+        color: #092AD7;
+    }
+    label input:checked ~ .logo_menu .menu_burger{
+        visibility: visible;
+    }
 }
