@@ -54,7 +54,8 @@ ul a{
 nav{
     background: #1E1E1E;
     box-shadow: 0px 15px 4px 0px rgba(0, 0, 0, 0.25);
-    position: relative;
+    position: fixed;
+    width: 100%;
     z-index: 2;
     font-family: 'Ninja Naruto';
     display: flex;
@@ -78,6 +79,13 @@ nav{
     font-size: 20px;
     font-style: normal;
 }
+/* -----------------probablement une mauvaise maniere mais trql ça marche------------ */
+.nav_banniere{
+    background: #1E1E1E;
+    width: 100%;
+    height: 100px;
+}
+/* ------------------------------------------------------------------------------------- */
 .banniere{
     background: no-repeat center url(img/banniere.png);
     background-size: cover;
@@ -92,6 +100,9 @@ main{
 .bandeau{
     width: 100%;
     height: 300px;
+}
+section{
+    width: 50%;
 }
 .content h1{
     margin-bottom: 15px;
@@ -162,6 +173,7 @@ footer{
 .banniere_contact{
     background: no-repeat center url(img/naruto-univers-header.png);
     background-size: cover;
+    position: relative;
     width: 100%;
     height: 286px;
     box-shadow: 0px 15px 4px 0px rgba(0, 0, 0, 0.25);
@@ -169,7 +181,6 @@ footer{
 .border{
     background: rgba(30, 30, 30, 0.68);
     border-radius: 50px;
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -293,7 +304,13 @@ input , textarea{
     display: none;
     cursor: pointer;
 }
-@media (max-width: 1150px){
+@media screen and (max-width: 1400px) {
+    
+}
+@media screen and (max-width: 1200px) {
+    .title_mail{
+        width: 100%;
+    }
     .icons{
         display: block;
         position: relative;
@@ -310,10 +327,12 @@ input , textarea{
     }
     label{
         display: block;
-        position: relative;
-        width: 100px;
-        height: 100px;
+        margin-bottom: 10px;
+        margin-right: 10px;
         cursor: pointer;
+    }
+    .border img{
+        width: 100%;
     }
     .label .logo_menu{
         background: #1E1E1E;
@@ -332,13 +351,15 @@ input , textarea{
         overflow: hidden;
         position: fixed;
         right: 2px;
-        background: rgba(215,9,9,0.60);
+        background: rgba(215,9,9,0.50);
         width: 300px;
-        height: 200px;
+        height: 250px;
         display: flex;
         text-align: center;
         justify-content: center;
         align-items: center;
+        border: 3px solid #1E1E1E;
+        border-radius: 20px 0px 20px 20px;
         visibility: hidden;
     }
     .menu_burger a{
@@ -347,4 +368,129 @@ input , textarea{
     label input:checked ~ .logo_menu .menu_burger{
         visibility: visible;
     }
+    hr{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: #0a0a0a;
+        height: 2px;
+        border: none;
+    }
+}
+@media screen and (max-width: 992px) {
+
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 576px) { 
+    .banniere_contact{
+        height: 190px;
+    }
+    .banniere{
+        height: 190px;
+    }
+    .form_div{
+        background: no-repeat center url(img/parchemin.jpg);
+        width: 100%;
+        height: 700px;
+        box-shadow: none
+    }
+    .title_mail{
+        width: 260px;
+        height: 48.828px;
+        border-radius: 15px;
+        border: 4px solid #000;
+        background: #E8E9DB;
+        box-shadow: 0px 10px 0px 5px rgba(0, 0, 0, 0.53) inset;
+    }
+    #mail{
+        width: 100%;
+        height: 29px;
+        border-radius: 9px;
+        border: 3px solid #000;
+        background: #E9EBDC;
+        box-shadow: 0px 5px 0px 5px rgba(0, 0, 0, 0.53) inset
+
+    }
+    #name{
+        width: 90%;
+        border-radius: 9px;
+        border: 3px solid #000;
+        background: #E9EBDC;
+        box-shadow: 0px 3px 0px 5px rgba(0, 0, 0, 0.53) inset;
+    }
+    #first_name{
+        width: 90%;
+        border-radius: 9px;
+        border: 3px solid #000;
+        background: #E9EBDC;
+        box-shadow: 0px 3px 0px 5px rgba(0, 0, 0, 0.53) inset;
+    }
+    #msg{
+        width: 100%;
+        height: 240px;
+        border-radius: 9px;
+        border: 3px solid #010101;
+        background: #E6ECE2;
+    }
+    .title_mail h2{
+        font-size: 16px;
+    }
+    .contact{
+        width: 50%;
+        justify-content: center;
+    }
+    .border{
+        width: 50%;
+    }
+    .border img{
+        width: 80%;
+    }
+    .border h1{
+        font-size: 20px;
+    }
+    .parent{
+        background: no-repeat center url(img/parchemin.jpg);
+        height: 700px;
+        box-shadow: none;
+    }
+    .resume{
+        flex-direction: column;
+    }
+    .resume section{
+        width: 70%;
+        margin: auto;
+        display: inline-block;
+    }
+    .resume section p{
+        font-size: 15px;
+    }
+    .navbar p{
+        font-size: 20px;
+    }
+    .navbar img{
+        width: 75px;
+        height: 75px;
+    }
+    .footer_top{
+        margin: 0;
+    }
+    .logo_footer{
+        width: 75px;
+        height: 75px;
+    }
+    .navbar_footer>ul>li{
+        font-size: 12px;
+    }
+    .navbar_footer{
+        margin-left: 10%;
+        width: 75%;
+    }
+    .illustration-accueil{
+        width: 100%;
+        height: 200px;
+        justify-content: space-around;
+    }
+
+
 }
